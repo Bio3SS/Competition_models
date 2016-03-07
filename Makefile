@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: coexist.Rout 
+target pngtarget pdftarget vtarget acrtarget: mutual.comp.Rout 
 
 ##################################################################
 
@@ -12,13 +12,13 @@ Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
 include stuff.mk
 # include $(ms)/perl.def
 
-coexist.Rout: coexist.R
-
 ##################################################################
 
 ## Content
 
 Sources += $(wildcard *.R)
+
+mutual.comp.Rout: mutual.R
 
 %.comp.Rout: comp.Rout deSolve.R %.R
 	$(run-R)
