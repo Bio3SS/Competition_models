@@ -34,5 +34,5 @@ mutual.comp.Rout: mutual.R
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
--include $(ms)/wrapper.mk
+-include $(ms)/wrapR.mk
 # -include $(ms)/oldlatex.mk
