@@ -1,7 +1,8 @@
 # Competition_models
 ### Hooks for the editor to set the default target
+
 current: target
--include $(ms)/target.mk
+-include target.mk
 
 ##################################################################
 
@@ -22,13 +23,9 @@ mutual.comp.Rout: mutual.R
 %.comp.Rout: comp.Rout deSolve.R %.R
 	$(run-R)
 
+bifurcation.Rout: bifurcation.R
 
 ######################################################################
-
-### Makestuff
-
-## Change this name to download a new version of the makestuff directory
-# Makefile: start.makestuff
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
