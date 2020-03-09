@@ -3,13 +3,7 @@
 current: target
 -include target.mk
 
-##################################################################
-
-# make files
-
-Sources = Makefile .ignore README.md sub.mk LICENSE.md
-include sub.mk
-# include $(ms)/perl.def
+Sources = Makefile
 
 ##################################################################
 
