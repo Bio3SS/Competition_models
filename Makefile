@@ -11,6 +11,10 @@ Sources = Makefile
 
 Sources += $(wildcard *.R)
 
+## Basic functions; also used elsewhere (evaluation)
+comp.Rout: comp.R
+	$(wrapR)
+
 mutual.comp.Rout: mutual.R
 
 %.comp.Rout: comp.Rout deSolve.R %.R
@@ -36,7 +40,7 @@ makestuff/Makefile:
 
 -include makestuff/os.mk
 
--include makestuff/wrapR.mk
+-include makestuff/pipeR.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
