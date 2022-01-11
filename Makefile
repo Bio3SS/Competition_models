@@ -17,10 +17,11 @@ comp.Rout: comp.R
 
 mutual.comp.Rout: mutual.R
 
-%.comp.Rout: comp.Rout deSolve.R %.R
+%.comp.Rout: comp.rda deSolve.R %.R
 	$(run-R)
 
 bifurcation.Rout: bifurcation.R
+	$(run-R)
 
 ######################################################################
 
@@ -41,6 +42,7 @@ makestuff/Makefile:
 -include makestuff/os.mk
 
 -include makestuff/pipeR.mk
+-include makestuff/pdfpages.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
