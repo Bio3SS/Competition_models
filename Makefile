@@ -17,6 +17,7 @@ comp.Rout: comp.R
 
 mutual.comp.Rout: mutual.R
 
+## second.comp.Rout: comp.rda deSolve.R second.R
 %.comp.Rout: comp.rda deSolve.R %.R
 	$(run-R)
 
